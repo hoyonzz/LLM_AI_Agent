@@ -1,0 +1,26 @@
+{
+    // VS Code IntelliSense를 위해 필요한 형식입니다.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // F5를 누르면 이 구성이 실행됩니다 (디버깅 모드)
+            "name": "Python: Current File (Debug)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true // 내 코드만 디버그
+        },
+        {
+            // Ctrl + F5를 누르면 이 구성이 실행됩니다 (디버깅 없이 실행)
+            // 'debug' 확장을 사용하지 않고 터미널에서 실행합니다.
+            "name": "Python: Current File (Run Only)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "noDebug": true // <--- 이 설정이 디버깅 없이 실행하는 핵심입니다.
+        }
+    ]
+}
