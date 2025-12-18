@@ -1,32 +1,14 @@
-# Speaker Diarization Project Requirements
-# 화자 분리(Speaker Diarization) 프로젝트용 최소 설정
-
-# =====================================================
-# IMPORTANT: PyTorch 설치 순서
-# 1. 터미널에서 먼저 실행: pip install torch torchvision torchaudio
-# 2. 그 다음: pip install -r requirements.txt
-# =====================================================
-
-# =====================================================
-# Speaker Diarization (화자 분리 - 핵심)
-# =====================================================
-pyannote.audio
-numpy==1.26.0
-
-# =====================================================
-# Audio Processing (오디오 처리)
-# =====================================================
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+transformers>=4.39.0
+accelerate>=0.28.0
+huggingface-hub<0.27
+pandas
+numpy<2.0
 librosa
 soundfile
-
-# =====================================================
-# Jupyter & Development Environment
-# =====================================================
-jupyter
-jupyterlab
+pyannote.audio==3.3.1
+python-dotenv
 ipykernel
-
-# =====================================================
-# Hugging Face (모델 다운로드 및 토큰 관리)
-# =====================================================
-huggingface-hub
+jupyter
