@@ -1,0 +1,22 @@
+[
+    {
+        "no": 1,
+        "eng": "Which of the following descriptions of the image is incorrect?\n- (1) Many people are attending a seminar.\n- (2) A large screen is visible at the top of the image.\n- (3) Everyone is eating food in the conference room.\n- (4) There are lights installed in the ceiling.",
+        "img": "busan_dive.jpg"
+    },
+    {
+        "no": 2,
+        "eng": "Which of the following descriptions of the image is incorrect?\n- (1) People are sitting and chatting inside the cafe.\n- (2) A barista is working behind the counter.\n- (3) There is a yellow wall behind the counter.\n- (4) There are multiple chairs and tables set up.",
+        "img": "local_stitch_terrarosa.jpg"
+    },
+    {
+        "no": 3,
+        "eng": "Which of the following descriptions of the image is incorrect?\n- (1) There are various types of bread on display.\n- (2) The staff is wearing a white hat.\n- (3) The bread does not have price tags.\n- (4) There is a glass display case.",
+        "img": "mangwon_bakery.jpg"
+    },
+    {
+        "no": 4,
+        "eng": "Which of the following descriptions of the image is incorrect?\n- (1) Several people are sitting and conversing.\n- (2) The outside view can be seen through the windows.\n- (3) There are books piled on the table.\n- (4) Lighting fixtures are installed on the ceiling.",
+        "img": "seolleung_terrarosa.jpg"
+    }
+]
