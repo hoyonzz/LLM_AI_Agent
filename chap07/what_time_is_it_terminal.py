@@ -2,6 +2,7 @@ from gpt_functions import get_current_time, tools
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
+import json
 
 
 load_dotenv()
@@ -38,12 +39,14 @@ while True:
         tool_name = tool_calls[0].function.name
         tool_call_id = tool_calls[0].id
 
+        arguments = json.loads(tool_calls[0].function.arguments)
+
         if tool_name == 'get_current_time':
             messages.append({
                 "role": "function",
                 "tool_call_id": tool_call_id,
                 "name": tool_name,
-                "content":get_current_time(),
+                "content":get_current_time(timezone=arguments['timezone']),
             })
 
         ai_response = get_ai_response(messages, tools=tools)
