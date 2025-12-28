@@ -32,22 +32,26 @@ while True:
 
     ai_response = get_ai_response(messages, tools=tools)
     ai_message = ai_response.choices[0].message
+    # messages.append(ai_message)
     print(ai_message)
 
     tool_calls = ai_message.tool_calls
     if tool_calls:
-        tool_name = tool_calls[0].function.name
-        tool_call_id = tool_calls[0].id
+        for tool_call in tool_calls:
+            tool_name = tool_call.function.name
+            tool_call_id = tool_call.id
 
-        arguments = json.loads(tool_calls[0].function.arguments)
+            arguments = json.loads(tool_call.function.arguments)
 
-        if tool_name == 'get_current_time':
-            messages.append({
-                "role": "function",
-                "tool_call_id": tool_call_id,
-                "name": tool_name,
-                "content":get_current_time(timezone=arguments['timezone']),
-            })
+            if tool_name == 'get_current_time':
+                messages.append({
+                    "role": "function",
+                    "tool_call_id": tool_call_id,
+                    "name": tool_name,
+                    "content":get_current_time(timezone=arguments['timezone']),
+                })
+
+        messages.append({"role": "system", "content": "이제 주어진 결과를 바탕으로 답변할 차례다."})
 
         ai_response = get_ai_response(messages, tools=tools)
         ai_message = ai_response.choices[0].message
