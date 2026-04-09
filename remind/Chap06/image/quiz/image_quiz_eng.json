@@ -1,0 +1,27 @@
+[
+    {
+        "no": 1,
+        "eng": "Which of the following descriptions of the image is incorrect?\n- (1) People are sitting in front of computers.\n- (2) The ceiling lights are on.\n- (3) There is a banner on the wall with the text \"DIVE 2024 in BUSAN.\"\n- (4) People are watching a sports game.",
+        "img": "busan_dive.jpg"
+    },
+    {
+        "no": 2,
+        "eng": "Which of the following descriptions of the image is incorrect?\n- (1) There is a logo on the top cover of the laptop.\n- (2) The keyboard includes a number pad.\n- (3) The display is turned off.\n- (4) The color of the laptop is gray.",
+        "img": "galaxybook.jpg"
+    },
+    {
+        "no": 3,
+        "eng": "Which of the following descriptions of the image is incorrect?\n- (1) There are two laptops in the image.\n- (2) One of the laptops has its screen open.\n- (3) The brand name on the laptop is displayed as \"Samsung.\"\n- (4) The background of the image is dark-colored.",
+        "img": "gram.jpg"
+    },
+    {
+        "no": 4,
+        "eng": "Which of the following descriptions of the image is incorrect?\n- (1) Pieces of meat are placed on the table.\n- (2) There are sauces in two small dishes.\n- (3) There is a floral-patterned cup in the upper left corner.\n- (4) The container has a transparent lid.",
+        "img": "image.jpg"
+    },
+    {
+        "no": 5,
+        "eng": "Which of the following descriptions of the image is incorrect?\n\n- (1) A large yellow sculpture is visible.\n- (2) The words \"Local Stitch\" are on the building.\n- (3) There is a brick building in the image.\n- (4) There are people lined up in the image.",
+        "img": "local_stitch.jpg"
+    }
+]
