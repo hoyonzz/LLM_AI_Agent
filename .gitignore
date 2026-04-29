@@ -190,3 +190,13 @@ pip-selfcheck.json
 .png
 
 # End of https://www.toptal.com/developers/gitignore/api/python,venv,dotenv
+
+# 무거운 데이터 파일 제외
+*.pdf
+*.csv
+data/
+
+# 벡터 db
+chroma_stre/
+*.sqlite3
+
