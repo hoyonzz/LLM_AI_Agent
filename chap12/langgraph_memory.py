@@ -61,7 +61,7 @@ while True:
     if user_input in ["exit", "quit", "q"]:
         break
 
-    for event in graph.stream({"messages": [HumanMessage(user_input)]}, stream_mode="values"):
+    for event in graph.stream({"messages": [HumanMessage(user_input)]}, config, stream_mode="values"):
         event["messages"][-1].pretty_print()
 
     print(f'\n현재 메시지 개수: {len(event["messages"])}\n-----------------------\n')
